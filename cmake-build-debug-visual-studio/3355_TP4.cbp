@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="3355_TP4"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/cmake-build-debug-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3355_TP4">
+				<Option output="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/cmake-build-debug-visual-studio/3355_TP4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/cmake-build-debug-visual-studio"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+					<Add directory="C:\PROGRA~2\Gambit\v4.9.3\include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 3355_TP4"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3355_TP4/fast">
+				<Option output="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/cmake-build-debug-visual-studio/3355_TP4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/cmake-build-debug-visual-studio"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+					<Add directory="C:\PROGRA~2\Gambit\v4.9.3\include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 3355_TP4/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/cmake-build-debug-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/cmake-build-debug-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Mo\Documents\7 - Work\projects remem\global-illumination-master\global-illumination-master\cmake-build-debug-visual-studio\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/basic.hpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/extras.cpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/extras.h">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/image.hpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/main.cpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/object.cpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/object.hpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/parser.cpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/parser.hpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/raytracer.cpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/raytracer.hpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/scene.hpp">
+			<Option target="3355_TP4"/>
+		</Unit>
+		<Unit filename="C:/Users/Mo/Documents/7 - Work/projects remem/global-illumination-master/global-illumination-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
