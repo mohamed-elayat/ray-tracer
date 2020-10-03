@@ -18,11 +18,7 @@ bool Object::intersect(Ray ray, Intersection &hit) const
     ray.direction[3] = 0;
 
     Ray local_ray(i_transform * ray.origin, i_transform * ray.direction);
-	//!!! NOTE UTILE : pour calculer la profondeur dans localIntersect(), si l'intersection se passe à
-	// ray.origin + ray.direction * t, alors t est la profondeur
-	//!!! NOTE UTILE : ici, la direction peut êytre mise à l'échelle, alors vous devez la renormaliser
-	// dans localIntersect(), ou vous aurez une profondeur dans le système de coordonnées local, qui
-	// ne pourra pas être comparée aux intersection avec les autres objets.
+
     if (localIntersect(local_ray, hit)) 
 	{
         // Assure la valeur correcte de W.
@@ -42,14 +38,6 @@ bool Object::intersect(Ray ray, Intersection &hit) const
 
 bool Sphere::localIntersect(Ray const &ray, Intersection &hit) const 
 {
-    // @@@@@@ VOTRE CODE ICI
-	// Vous pourriez aussi utiliser des relations géométriques pures plutôt que les
-	// outils analytiques présentés dans les slides.
-	// Ici, dans le système de coordonées local, la sphère est centrée en (0, 0, 0)
-	// avec un radius de 1.0.
-	//
-	// NOTE : hit.depth est la profondeur de l'intersection actuellement la plus proche,
-	// donc n'acceptez pas les intersections qui occurent plus loin que cette valeur.
 
 	// coefficients of quadratic equation
 
@@ -90,12 +78,6 @@ bool Sphere::localIntersect(Ray const &ray, Intersection &hit) const
 
 bool Plane::localIntersect(Ray const &ray, Intersection &hit) const
 {
-	// @@@@@@ VOTRE CODE ICI
-	// N'acceptez pas les intersections tant que le rayon est à l'intérieur du plan.
-	// ici, dans le système de coordonées local, le plan est à z = 0.
-	//
-	// NOTE : hit.depth est la profondeur de l'intersection actuellement la plus proche,
-	// donc n'acceptez pas les intersections qui occurent plus loin que cette valeur.
 
 	// if ray starts on plane, and goes along it
 
@@ -190,17 +172,6 @@ bool Mesh::intersectTriangle(Ray const &ray,
 	Vector const &p0 = positions[tri[0].pi];
 	Vector const &p1 = positions[tri[1].pi];
 	Vector const &p2 = positions[tri[2].pi];
-
-	// @@@@@@ VOTRE CODE ICI
-	// Décidez si le rayon intersecte le triangle (p0,p1,p2).
-	// Si c'est le cas, remplissez la structure hit avec les informations
-	// de l'intersection et renvoyez true.
-	// Vous pourriez trouver utile d'utiliser la routine implicitLineEquation()
-	// pour calculer le résultat de l'équation de ligne implicite en 2D.
-	//
-	// NOTE : hit.depth est la profondeur de l'intersection actuellement la plus proche,
-	// donc n'acceptez pas les intersections qui occurent plus loin que cette valeur.
-	//!!! NOTE UTILE : pour le point d'intersection, sa normale doit satisfaire hit.normal.dot(ray.direction) < 0
 
     Vector v0 = Vector(p1[0] - p0[0], p1[1] - p0[1], p1[2] - p0[2]);
     Vector v1 = Vector(p2[0] - p1[0], p2[1] - p1[1], p2[2] - p1[2]);

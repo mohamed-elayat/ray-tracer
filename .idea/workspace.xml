@@ -12,7 +12,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f15f5b8e-b866-4d34-a66e-23725cf65531" name="Default Changelist" comment="" />
+    <list default="true" id="f15f5b8e-b866-4d34-a66e-23725cf65531" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/object.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raytracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/raytracer.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +71,8 @@
       <workItem from="1586370254553" duration="84000" />
       <workItem from="1586370715180" duration="314000" />
       <workItem from="1601678999604" duration="849000" />
+      <workItem from="1601768308957" duration="45000" />
+      <workItem from="1601768604334" duration="307000" />
     </task>
     <servers />
   </component>
@@ -78,6 +84,14 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="482" y="187" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1304.768@62.0.1304.768" timestamp="1601679386674" />
+    <state x="494" y="139" key="FileChooserDialogImpl" timestamp="1601768352053">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="494" y="139" key="FileChooserDialogImpl/62.0.1304.768@62.0.1304.768" timestamp="1601768352053" />
+    <state x="410" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1601768310207">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="410" y="208" key="com.intellij.ide.util.TipDialog/62.0.1304.768@62.0.1304.768" timestamp="1601768310207" />
     <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1601679289750">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
@@ -88,12 +102,12 @@
       <breakpoints>
         <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/raytracer.cpp</url>
-          <line>93</line>
+          <line>82</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/object.cpp</url>
-          <line>189</line>
+          <line>171</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

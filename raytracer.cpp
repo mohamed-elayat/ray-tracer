@@ -32,12 +32,6 @@ void Raytracer::render(const char *filename, const char *depth_filename,
         zBuffer[i] = DBL_MAX;
     }
 
-	// @@@@@@ VOTRE CODE ICI
-	// Calculez les paramètres de la caméra pour les rayons. Référez-vous aux slides pour les détails.
-	//!!! NOTE UTILE : tan() prend des radians plutot que des degrés. Utilisez deg2rad() pour la conversion.
-	//!!! NOTE UTILE : Le plan de vue peut être n'importe où, mais il sera implémenté différement.
-	// Vous trouverez des références dans le cours.
-
 	Vector w = scene.camera.center - scene.camera.position;
     w.normalize();
     w[3] = 0;
@@ -82,11 +76,6 @@ void Raytracer::render(const char *filename, const char *depth_filename,
 			    Vector Pij = O + xComp + yComp;
 //                ray = Ray(  scene.camera.position, camMat * Pij  );
                 ray = Ray(  scene.camera.position, (camMat * Pij).normalized()  );
-
-				// @@@@@@ VOTRE CODE ICI
-				// Mettez en place le rayon primaire en utilisant les paramètres de la caméra.
-				//!!! NOTE UTILE : tous les rayons dont les coordonnées sont exprimées dans le
-				//                 repère monde doivent avoir une direction normalisée.
 				
 			}
 
@@ -147,10 +136,6 @@ bool Raytracer::trace(Ray const &ray,
     // Incrémente la profondeur du rayon.
     rayDepth++;
 
-    // - itérer sur tous les objets en appelant calling Object::intersect.
-    // - ne pas accepter les intersections plus lointaines que la profondeur donnée.
-    // - appeler Raytracer::shade avec l'intersection la plus proche.
-    // - renvoyer true ssi le rayon intersecte un objet.
     if (scene.objects.empty())
     {
         // Pas d'objet dans la scène --> on rend la scène par défaut :
@@ -169,9 +154,6 @@ bool Raytracer::trace(Ray const &ray,
     }
     else
     {
-        // @@@@@@ VOTRE CODE ICI
-        // Notez que pour Object::intersect(), le paramètre hit correspond à celui courant.
-        // Votre intersect() devrait être implémenté pour exclure toute intersection plus lointaine que hit.depth
 
 //		Intersection hit;
         Intersection hit = Intersection(); //todo: is this needed? or is the line above enough?
@@ -271,15 +253,7 @@ Vector Raytracer::shade(Ray const &ray,
                  Material const &material,
                  Scene const &scene)
 {
-    // - itérer sur toutes les sources de lumières, calculant les contributions ambiant/diffuse/speculaire
-    // - utiliser les rayons d'ombre pour déterminer les ombres
-    // - intégrer la contribution de chaque lumière
-    // - inclure l'émission du matériau de la surface, s'il y a lieu
-    // - appeler Raytracer::trace pour les couleurs de reflection/refraction
-    // Ne pas réfléchir/réfracter si la profondeur de récursion maximum du rayon a été atteinte !
-	//!!! NOTE UTILE : facteur d'atténuation = 1.0 / (a0 + a1 * d + a2 * d * d)..., la lumière ambiante ne s'atténue pas, ni n'est affectée par les ombres
-	//!!! NOTE UTILE : n'acceptez pas les intersection des rayons d'ombre qui sont plus loin que la position de la lumière
-	//!!! NOTE UTILE : pour chaque type de rayon, i.e. rayon d'ombre, rayon reflechi, et rayon primaire, les profondeurs maximales sont différentes
+
 	Vector diffuse(0);
 	Vector ambient(0);
 	Vector specular(0);
@@ -288,9 +262,6 @@ Vector Raytracer::shade(Ray const &ray,
 
 	for (auto lightIter = scene.lights.begin(); lightIter != scene.lights.end(); lightIter++)
 	{
-		// @@@@@@ VOTRE CODE ICI
-		// Calculez l'illumination locale ici, souvenez-vous d'ajouter les lumières ensemble.
-		// Testez également les ombres ici, si un point est dans l'ombre, multipliez ses couleurs diffuse et spéculaire par (1 - material.shadow)
 
 		Vector l = (lightIter->position - intersection.position).normalized();
 		Vector n = intersection.normal.normalized();
@@ -316,8 +287,6 @@ Vector Raytracer::shade(Ray const &ray,
 	Vector reflectedLight(0);
 	if ((!(ABS_FLOAT(material.reflect) < 1e-6)) && (rayDepth < MAX_RAY_RECURSION))
 	{
-		// @@@@@@ VOTRE CODE ICI
-		// Calculez la couleur réfléchie en utilisant trace() de manière récursive.
 
 //        Vector l = (lightIter->position - intersection.position).normalized();
         Vector n = intersection.normal.normalized();
